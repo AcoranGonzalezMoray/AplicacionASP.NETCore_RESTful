@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BC_Veterinaria.Migrations
 {
     [DbContext(typeof(sqlServerContext))]
-    [Migration("20230827131718_initial")]
+    [Migration("20230901151132_initial")]
     partial class initial
     {
         /// <inheritdoc />
@@ -39,7 +39,15 @@ namespace BC_Veterinaria.Migrations
                     b.Property<DateTime>("Birth")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Pathologies")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -47,11 +55,7 @@ namespace BC_Veterinaria.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("pathologies")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("vaccinations")
+                    b.Property<string>("Vaccinations")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

@@ -7,9 +7,9 @@
         public string Race { get; set; }
         public DateTime Birth { get; set; }
         public int Age { get; set; }
-        public string pathologies { get; set; }
-        public string vaccinations { get; set; } 
-
+        public string Pathologies { get; set; }
+        public string Vaccinations { get; set; } 
+        public string ImageUrl { get; set; }
        
     }
 }

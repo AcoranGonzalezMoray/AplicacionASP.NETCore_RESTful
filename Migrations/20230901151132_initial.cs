@@ -21,8 +21,9 @@ namespace BC_Veterinaria.Migrations
                     Race = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Birth = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Age = table.Column<int>(type: "int", nullable: false),
-                    pathologies = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    vaccinations = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Pathologies = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Vaccinations = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {

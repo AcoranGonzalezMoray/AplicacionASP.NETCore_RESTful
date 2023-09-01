@@ -4,6 +4,7 @@ using BC_Veterinaria.Model.SqlServer;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using System;
 
 namespace BC_Veterinaria.Controllers
@@ -60,11 +61,12 @@ namespace BC_Veterinaria.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post(dog Dog)
+        public async Task<IActionResult> Post([FromForm]string DogData, [FromForm]IFormFile image)
         {
             try
             {
-                await _context.postDog(Dog);
+                var Dog = JsonConvert.DeserializeObject<dog>(DogData);
+                await _context.postDog(Dog, image);
                 return CreatedAtAction("Get",new { id = Dog.Id },Dog);
             }
             catch (Exception ex)
@@ -78,16 +80,18 @@ namespace BC_Veterinaria.Controllers
 
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Put(int id, dog Dog)
+        public async Task<IActionResult> Put(int id,[FromForm]string DogData, [FromForm]IFormFile image)
         {
             try
             {
+                var Dog = JsonConvert.DeserializeObject<dog>(DogData);
+
                 if (id != Dog.Id) return BadRequest();
 
                 var dogBD = await _context.GetDog(Dog.Id);
                 if (dogBD is null) return NotFound();//404
 
-                await _context.putDog(dogBD,Dog);
+                await _context.putDog(dogBD,Dog, image);
                 return NoContent();
             }
             catch (Exception ex)
