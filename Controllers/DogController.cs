@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using System;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace BC_Veterinaria.Controllers
 {
@@ -14,9 +15,11 @@ namespace BC_Veterinaria.Controllers
     public class DogController : ControllerBase
     {
 
-        private readonly IDogRepository _context;
-        public DogController(IDogRepository context) {
-            _context = context;
+        private readonly IDogRepository _context_dog;
+        private readonly IStorageRepository _context_storage;
+        public DogController(IDogRepository context_dog, IStorageRepository context_storage) {
+            _context_dog = context_dog;
+            _context_storage = context_storage;
         }
 
 
@@ -26,8 +29,8 @@ namespace BC_Veterinaria.Controllers
 
             try
             {
-                Thread.Sleep(1000);
-                var allDogs = await  _context.GetListDogs();
+            
+                var allDogs = await  _context_dog.GetListDogs();
 
                 if(allDogs is null) return NotFound();//404
 
@@ -46,11 +49,13 @@ namespace BC_Veterinaria.Controllers
         {
             try
             {
-                var dog = await _context.GetDog(id);
+                var dog = await _context_dog.GetDog(id);
 
                 if (dog is null) return NotFound();//404
 
-                await _context.DeleteDog(dog);
+                await _context_storage.DeleteImage(dog.ImageUrl);
+
+                await _context_dog.DeleteDog(dog);
 
                 return NoContent();//204
             }
@@ -66,7 +71,14 @@ namespace BC_Veterinaria.Controllers
             try
             {
                 var Dog = JsonConvert.DeserializeObject<dog>(DogData);
-                await _context.postDog(Dog, image);
+
+                //RECIBIR LOS DATOS DEL FORMULARIO
+                Stream image_stream = image.OpenReadStream();
+                string urlimagen = await _context_storage.UploadImage(image_stream, image.FileName);
+
+                Dog.ImageUrl = urlimagen;
+
+                await _context_dog.postDog(Dog);
                 return CreatedAtAction("Get",new { id = Dog.Id },Dog);
             }
             catch (Exception ex)
@@ -88,10 +100,15 @@ namespace BC_Veterinaria.Controllers
 
                 if (id != Dog.Id) return BadRequest();
 
-                var dogBD = await _context.GetDog(Dog.Id);
+                var dogBD = await _context_dog.GetDog(Dog.Id);
                 if (dogBD is null) return NotFound();//404
 
-                await _context.putDog(dogBD,Dog, image);
+                await _context_storage.DeleteImage(dogBD.ImageUrl);
+
+                Stream imagen = image.OpenReadStream();
+                Dog.ImageUrl =  await _context_storage.UploadImage(imagen, image.FileName);
+
+                await _context_dog.putDog(dogBD,Dog);
                 return NoContent();
             }
             catch (Exception ex)

@@ -14,6 +14,7 @@ builder.Services.AddSwaggerGen();
 
 //REPOSITORY
 builder.Services.AddScoped<IDogRepository, DogRepository>();
+builder.Services.AddScoped<IStorageRepository, StorageRepository>();
 
 //SQLSERVER
 builder.Services.AddDbContext<sqlServerContext>(opt =>
