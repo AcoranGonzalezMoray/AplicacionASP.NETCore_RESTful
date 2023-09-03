@@ -1,12 +1,7 @@
 ﻿using BC_Veterinaria.Interfaces;
 using BC_Veterinaria.Model;
-using BC_Veterinaria.Model.SqlServer;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
-using System;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace BC_Veterinaria.Controllers
 {
@@ -70,16 +65,16 @@ namespace BC_Veterinaria.Controllers
         {
             try
             {
-                var Dog = JsonConvert.DeserializeObject<dog>(DogData);
+                var dog = JsonConvert.DeserializeObject<Dog>(DogData);
 
                 //RECIBIR LOS DATOS DEL FORMULARIO
                 Stream image_stream = image.OpenReadStream();
                 string urlimagen = await _context_storage.UploadImage(image_stream, image.FileName);
 
-                Dog.ImageUrl = urlimagen;
+                dog.ImageUrl = urlimagen;
 
-                await _context_dog.postDog(Dog);
-                return CreatedAtAction("Get",new { id = Dog.Id },Dog);
+                await _context_dog.postDog(dog);
+                return CreatedAtAction("Get",new { id = dog.Id },dog);
             }
             catch (Exception ex)
             {
@@ -96,7 +91,7 @@ namespace BC_Veterinaria.Controllers
         {
             try
             {
-                var Dog = JsonConvert.DeserializeObject<dog>(DogData);
+                var Dog = JsonConvert.DeserializeObject<Dog>(DogData);
 
                 if (id != Dog.Id) return BadRequest();
 

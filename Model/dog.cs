@@ -1,6 +1,6 @@
 ﻿namespace BC_Veterinaria.Model
 {
-    public class dog
+    public class Dog
     {
         public int Id { get; set; }
         public string Name { get; set; }

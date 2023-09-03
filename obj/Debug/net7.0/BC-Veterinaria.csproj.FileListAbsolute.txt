@@ -77,3 +77,4 @@ C:\Users\acora\source\repos\Veterinario\Backend\BC-Veterinaria\obj\Debug\net7.0\
 C:\Users\acora\source\repos\Veterinario\Backend\BC-Veterinaria\bin\Debug\net7.0\Firebase.Auth.dll
 C:\Users\acora\source\repos\Veterinario\Backend\BC-Veterinaria\bin\Debug\net7.0\Firebase.Storage.dll
 C:\Users\acora\source\repos\Veterinario\Backend\BC-Veterinaria\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\acora\source\repos\Veterinario\Backend\BC-Veterinaria\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

@@ -9,6 +9,8 @@ namespace BC_Veterinaria.Model.SqlServer
         {
         }
         
-        public DbSet<dog> DOGS { get; set; } = null!;
+        public DbSet<Dog> DOGS { get; set; } = null!;
+        public DbSet<User> USERS { get; set; } = null!;
     }
 }
+

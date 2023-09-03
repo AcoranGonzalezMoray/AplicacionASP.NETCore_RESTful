@@ -14,31 +14,31 @@ namespace BC_Veterinaria.Interfaces.Repository
             _context = context;
         }
 
-        public async Task DeleteDog(dog dog)
+        public async Task DeleteDog(Dog dog)
         {
             _context.DOGS.Remove(dog);
             await _context.SaveChangesAsync();
             return;
         }
 
-        public async Task<dog> GetDog(int id)
+        public async Task<Dog> GetDog(int id)
         {
             return await _context.DOGS.Where(d => d.Id == id).FirstOrDefaultAsync();
         }
 
-        public async Task<List<dog>> GetListDogs()
+        public async Task<List<Dog>> GetListDogs()
         {
             return await _context.DOGS.ToListAsync();   
         }
 
-        public async Task postDog(dog Dog)
+        public async Task postDog(Dog dog)
         {
-            _context.DOGS.Add(Dog);
+            _context.DOGS.Add(dog);
             await _context.SaveChangesAsync();
           
         }
 
-        public async Task putDog(dog DogBD, dog Dog)
+        public async Task putDog(Dog DogBD, Dog Dog)
         {
 
             

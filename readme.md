@@ -21,9 +21,16 @@
     formData.append('DogData', JSON.stringify(dog)); // Convertir el objeto a JSON y agregarlo al FormData
     formData.append('image', image, image.name); // Agregar la imagen al FormData
    
-    // Configurar las cabeceras si es necesario
-    const headers = new HttpHeaders();
+    // Configurar las cabeceras con JWT
+    let headers = new HttpHeaders({
+      'Authorization': `Bearer ${token}`
+    });
+
+     // Configurar las cabeceras SIN JWT
+     const headers = new HttpHeaders();
     headers.append('Content-Type', 'multipart/form-data');
+
+
 
     dog.imageUrl  =''
 
