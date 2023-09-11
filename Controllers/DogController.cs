@@ -1,5 +1,6 @@
 ﻿using BC_Veterinaria.Interfaces;
 using BC_Veterinaria.Model;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
@@ -17,7 +18,7 @@ namespace BC_Veterinaria.Controllers
             _context_storage = context_storage;
         }
 
-
+        [AllowAnonymous]
         [HttpGet]
         public async Task<IActionResult> Get()
         {
