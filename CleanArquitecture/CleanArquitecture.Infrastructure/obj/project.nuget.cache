@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jfSUKA5DY49ptEpLT2JWgWgWEkcbCdGuD9qe1Kq7UMr47zM/X/ImpweeMiywLeX29jK2xRqdBMrBwebEEWrtWA==",
+  "dgSpecHash": "2uNxHzHufGJOEhGKvEqcC+MwFQNlaSYDdXnEWAp8Kx5w8l5hGrWrf7iN1673Ar94duWSb3kRfncM3GUNhGicVw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\acora\\source\\repos\\CleanArquitecture\\CleanArquitecture.Infrastructure\\CleanArquitecture.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\acora\\source\\repos\\Veterinario\\Backend\\AplicacionASP.NETCore_RESTful\\CleanArquitecture\\CleanArquitecture.Infrastructure\\CleanArquitecture.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\acora\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\acora\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

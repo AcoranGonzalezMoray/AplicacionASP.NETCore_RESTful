@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2IN6AJ8F9rlPKFGXD25ZjvymGS93CmmqOFrzTZcR2Xv4ws5XI/nQmqtGGHfw2M91pgCwr/PYj1DaFG6eauzZMw==",
+  "dgSpecHash": "A4XvUBvV+XD8MZmI6pcoJaQmjKqY5a7JYh0MaeRgw4oeg7ywmX/gpJ8s4yOyyLHjSRiInagT7rPJWFuS0Mrvug==",
   "success": true,
-  "projectFilePath": "C:\\Users\\acora\\source\\repos\\CleanArquitecture\\CleanArquitecture.Api\\CleanArquitecture.Api.csproj",
+  "projectFilePath": "C:\\Users\\acora\\source\\repos\\Veterinario\\Backend\\AplicacionASP.NETCore_RESTful\\CleanArquitecture\\CleanArquitecture.Api\\CleanArquitecture.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\acora\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\acora\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

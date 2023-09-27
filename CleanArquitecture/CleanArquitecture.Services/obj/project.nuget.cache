@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ktWWLCHYmnEtNtFPwEYN2VFCZVFqn30a0TEhyAPZ08rhqOse3C/SjyJo0c+Asf64ZbfEaOReQeEk6XT7jHdwPQ==",
+  "dgSpecHash": "5Q3eNewzLQVl2nAMHJQgGLL7UXCx2x4Tj9ePoSPGFlxaMfAr9DVUOw52oLBzhBUWTzqJAB/J/eT2VGSkud1+GA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\acora\\source\\repos\\CleanArquitecture\\CleanArquitecture.Services\\CleanArquitecture.Services.csproj",
+  "projectFilePath": "C:\\Users\\acora\\source\\repos\\Veterinario\\Backend\\AplicacionASP.NETCore_RESTful\\CleanArquitecture\\CleanArquitecture.Services\\CleanArquitecture.Services.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
