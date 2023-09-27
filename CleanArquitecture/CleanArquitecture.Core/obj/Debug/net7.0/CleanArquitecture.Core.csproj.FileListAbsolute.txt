@@ -1,0 +1,11 @@
+C:\Users\acora\source\repos\CleanArquitecture\CleanArquitecture.Core\bin\Debug\net7.0\CleanArquitecture.Core.deps.json
+C:\Users\acora\source\repos\CleanArquitecture\CleanArquitecture.Core\bin\Debug\net7.0\CleanArquitecture.Core.dll
+C:\Users\acora\source\repos\CleanArquitecture\CleanArquitecture.Core\bin\Debug\net7.0\CleanArquitecture.Core.pdb
+C:\Users\acora\source\repos\CleanArquitecture\CleanArquitecture.Core\obj\Debug\net7.0\CleanArquitecture.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\acora\source\repos\CleanArquitecture\CleanArquitecture.Core\obj\Debug\net7.0\CleanArquitecture.Core.AssemblyInfoInputs.cache
+C:\Users\acora\source\repos\CleanArquitecture\CleanArquitecture.Core\obj\Debug\net7.0\CleanArquitecture.Core.AssemblyInfo.cs
+C:\Users\acora\source\repos\CleanArquitecture\CleanArquitecture.Core\obj\Debug\net7.0\CleanArquitecture.Core.csproj.CoreCompileInputs.cache
+C:\Users\acora\source\repos\CleanArquitecture\CleanArquitecture.Core\obj\Debug\net7.0\CleanArquitecture.Core.dll
+C:\Users\acora\source\repos\CleanArquitecture\CleanArquitecture.Core\obj\Debug\net7.0\refint\CleanArquitecture.Core.dll
+C:\Users\acora\source\repos\CleanArquitecture\CleanArquitecture.Core\obj\Debug\net7.0\CleanArquitecture.Core.pdb
+C:\Users\acora\source\repos\CleanArquitecture\CleanArquitecture.Core\obj\Debug\net7.0\ref\CleanArquitecture.Core.dll

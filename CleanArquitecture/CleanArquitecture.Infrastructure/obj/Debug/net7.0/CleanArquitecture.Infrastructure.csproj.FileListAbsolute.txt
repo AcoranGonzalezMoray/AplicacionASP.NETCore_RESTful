@@ -1,0 +1,17 @@
+C:\Users\acora\source\repos\CleanArquitecture\CleanArquitecture.Infrastructure\bin\Debug\net7.0\CleanArquitecture.Infrastructure.deps.json
+C:\Users\acora\source\repos\CleanArquitecture\CleanArquitecture.Infrastructure\bin\Debug\net7.0\CleanArquitecture.Infrastructure.dll
+C:\Users\acora\source\repos\CleanArquitecture\CleanArquitecture.Infrastructure\bin\Debug\net7.0\CleanArquitecture.Infrastructure.pdb
+C:\Users\acora\source\repos\CleanArquitecture\CleanArquitecture.Infrastructure\bin\Debug\net7.0\CleanArquitecture.Core.dll
+C:\Users\acora\source\repos\CleanArquitecture\CleanArquitecture.Infrastructure\bin\Debug\net7.0\CleanArquitecture.Core.pdb
+C:\Users\acora\source\repos\CleanArquitecture\CleanArquitecture.Infrastructure\obj\Debug\net7.0\CleanArquitecture.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\acora\source\repos\CleanArquitecture\CleanArquitecture.Infrastructure\obj\Debug\net7.0\CleanArquitecture.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\acora\source\repos\CleanArquitecture\CleanArquitecture.Infrastructure\obj\Debug\net7.0\CleanArquitecture.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\acora\source\repos\CleanArquitecture\CleanArquitecture.Infrastructure\obj\Debug\net7.0\CleanArquitecture.Infrastructure.AssemblyInfo.cs
+C:\Users\acora\source\repos\CleanArquitecture\CleanArquitecture.Infrastructure\obj\Debug\net7.0\CleanArquitecture.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\acora\source\repos\CleanArquitecture\CleanArquitecture.Infrastructure\obj\Debug\net7.0\CleanArquitecture.Infrastructure.csproj.CopyComplete
+C:\Users\acora\source\repos\CleanArquitecture\CleanArquitecture.Infrastructure\obj\Debug\net7.0\CleanArquitecture.Infrastructure.dll
+C:\Users\acora\source\repos\CleanArquitecture\CleanArquitecture.Infrastructure\obj\Debug\net7.0\refint\CleanArquitecture.Infrastructure.dll
+C:\Users\acora\source\repos\CleanArquitecture\CleanArquitecture.Infrastructure\obj\Debug\net7.0\CleanArquitecture.Infrastructure.pdb
+C:\Users\acora\source\repos\CleanArquitecture\CleanArquitecture.Infrastructure\obj\Debug\net7.0\ref\CleanArquitecture.Infrastructure.dll
+C:\Users\acora\source\repos\CleanArquitecture\CleanArquitecture.Infrastructure\bin\Debug\net7.0\CleanArquitecture.Infrastructure.runtimeconfig.json
+C:\Users\acora\source\repos\CleanArquitecture\CleanArquitecture.Infrastructure\obj\Debug\net7.0\CleanArquitecture.Infrastructure.genruntimeconfig.cache
