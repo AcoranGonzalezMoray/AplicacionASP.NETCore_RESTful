@@ -4,6 +4,7 @@ using BC_Veterinaria.Model.SqlServer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BC_Veterinaria.Migrations
 {
     [DbContext(typeof(sqlServerContext))]
-    partial class sqlServerContextModelSnapshot : ModelSnapshot
+    [Migration("20230916131500_initial_v4")]
+    partial class initial_v4
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -92,39 +95,6 @@ namespace BC_Veterinaria.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("USERS");
-                });
-
-            modelBuilder.Entity("BC_Veterinaria.Model.dogList", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int?>("UserId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("number")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("dogList");
-                });
-
-            modelBuilder.Entity("BC_Veterinaria.Model.dogList", b =>
-                {
-                    b.HasOne("BC_Veterinaria.Model.User", null)
-                        .WithMany("lista")
-                        .HasForeignKey("UserId");
-                });
-
-            modelBuilder.Entity("BC_Veterinaria.Model.User", b =>
-                {
-                    b.Navigation("lista");
                 });
 #pragma warning restore 612, 618
         }
