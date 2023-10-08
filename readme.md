@@ -1,6 +1,6 @@
 <h1 align="center">BACKEND ASP.NET CORE </h1>
 
-## Paquetes Nuget implicados:
+## Paquetes Nuget implicados:  
 
 <ul>
   <li>microsoft.entityframeworkcore\7.0.10\</li>
