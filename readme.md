@@ -12,7 +12,7 @@
   <li>firebaseauthentication.net\3.7.1\</li>
 </ul>
 
-## Ejemplo Petición
+## Ejemplo Petición 
 
 ```
   post(dog:DogElement, image:File):Observable<void>{
